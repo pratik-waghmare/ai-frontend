@@ -35,7 +35,9 @@ const FileUpload = ({ onUpload, isOpen, setIsOpen }: FileUploadProps) => {
     };
 
     return (
-        <Dialog open={isOpen}>
+        <Dialog open={isOpen} onOpenChange={(open) => {
+            setIsOpen(open);
+        }}>
             <form>
                 <DialogTrigger asChild>
                     <Button variant="outline" onClick={() => setIsOpen(true)} className="cursor-pointer">Upload File</Button>
