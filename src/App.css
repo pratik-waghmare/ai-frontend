@@ -1,0 +1,16 @@
+.file-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+    cursor: pointer;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+  }
+
+  .file-upload input[type="file"] {
+    display: none; /* hide native input */
+  }
